@@ -64,12 +64,12 @@ inputs:
           cronExpression: "0 15 */1 * * * *"
           enable: true
           argument: jd_superMarket&jd_syj&jd_city&jd_zoo
-    - timer: #京豆变动通知 #疯狂的joy #监控crazyJoy分红 #京东排行榜 #领京豆额外奖励 #京东保价 #闪购盲盒
+    - timer: #京豆变动通知 #疯狂的joy #监控crazyJoy分红 #京东排行榜 #领京豆额外奖励 #京东保价 #闪购盲盒 #京东沸腾之夜
         parameters:
-          name: beanchange_crazyjoy_crazyjoybonus_rankingList_beanhome_price_sgmh
+          name: beanchange_crazyjoy_crazyjoybonus_rankingList_beanhome_price_sgmh_partynight
           cronExpression: "0 30 7 * * * *"
           enable: true
-          argument: jd_bean_change&jd_crazy_joy&jd_crazy_joy_bonus&jd_rankingList&jd_bean_home&jd_price&jd_sgmh
+          argument: jd_bean_change&jd_crazy_joy&jd_crazy_joy_bonus&jd_rankingList&jd_bean_home&jd_price&jd_sgmh&jd_party_nigth
     - timer: #金融养猪 #京东快递 #京东赚赚 #京喜签到 #京东极速版红包 #领金贴
         parameters:
           name: pigPet_kd_jdzz_sign_speedredpocke_jintie
