@@ -6,7 +6,7 @@
 ==============Quantumult X==============
 [task_local]
 #幸运大转盘
-4 10 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_market_lottery.js, tag=幸运大转盘, enabled=true
+4 10 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_market_lottery.js, tag=幸运大转盘, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ==============Loon==============
 [Script]

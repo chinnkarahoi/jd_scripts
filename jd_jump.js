@@ -75,7 +75,7 @@ async function jump() {
   $.jumpList = [];
   await getGameList();
   if ($.jumpList.length === 0) {
-    console.log(`获取活动列表失败`);
+    console.log(`获取活动列表失败，请等待下一期活动\n`);
     return;
   }
   await $.wait(1000);
