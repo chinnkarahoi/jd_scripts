@@ -302,7 +302,7 @@ function redPacket() {
             t.setHours(0, 0, 0, 0)
             t = parseInt((t - 1) / 1000)
             for (let vo of data.useRedInfo.redList || []) {
-              if (vo.activityName.includes("京喜")) {
+              if (vo.activityName.includes("京喜") || vo.activityName.includes("阶梯")) {
                 $.jxRed += parseFloat(vo.balance)
                 if (vo['endTime'] === t) {
                   $.jxRedExpire += parseFloat(vo.balance)

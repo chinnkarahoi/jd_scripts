@@ -1,5 +1,5 @@
 /*
-Last Modified time: 2021-03-09 21:22:37
+Last Modified time: 2021-06-06 21:22:37
 宠汪汪积分兑换奖品脚本, 目前脚本只兑换京豆，兑换京豆成功，才会发出通知提示，其他情况不通知。
 活动入口：京东APP我的-更多工具-宠汪汪
 兑换规则：一个账号一天只能兑换一次京豆。
@@ -211,7 +211,7 @@ async function joyReward() {
 }
 function getExchangeRewards() {
   let opt = {
-    url: "//jdjoy.jd.com/common/gift/getBeanConfigs?reqSource=h5",
+    url: "//jdjoy.jd.com/common/gift/getBeanConfigs?reqSource=h5&invokeKey=Oex5GmEuqGep1WLC",
     method: "GET",
     data: {},
     credentials: "include",
@@ -255,7 +255,7 @@ function getExchangeRewards() {
 function exchange(saleInfoId, orderSource) {
   let body = {"buyParam":{"orderSource":orderSource,"saleInfoId":saleInfoId},"deviceInfo":{}}
   let opt = {
-    "url": "//jdjoy.jd.com/common/gift/new/exchange",
+    "url": "//jdjoy.jd.com/common/gift/new/exchange?reqSource=h5&invokeKey=Oex5GmEuqGep1WLC",
     "data":body,
     "credentials":"include","method":"POST","header":{"content-type":"application/json"}
   }
