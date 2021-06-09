@@ -87,8 +87,7 @@ autoHelp() {
 # autoHelp 关键词 日志路径 变量名
 
 ############# 短期活动 #############
-#城城领现金
-autoHelp "城城领现金" "${logDir}/jd_city.log" "JD_CITY_EXCHANGE"
+
 
 ############# 长期活动 #############
 

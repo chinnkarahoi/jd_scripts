@@ -80,6 +80,7 @@ jobs:
       JXNC_NOTIFY_LEVEL: ${{ secrets.JXNC_NOTIFY_LEVEL}}
       PURCHASE_SHOPS: ${{ secrets.PURCHASE_SHOPS}}
       TUAN_ACTIVEID: ${{ secrets.TUAN_ACTIVEID}}
+      HELP_AUTHOR: ${{ secrets.HELP_AUTHOR}}
       
     steps:
       - name: Checkout
@@ -174,6 +175,7 @@ jobs:
           if [ $JXNC_NOTIFY_LEVEL ]; then sed -i "/variables/a\      JXNC_NOTIFY_LEVEL: $JXNC_NOTIFY_LEVEL" serverless.yml; fi;
           if [ $PURCHASE_SHOPS ]; then sed -i "/variables/a\      PURCHASE_SHOPS: $PURCHASE_SHOPS" serverless.yml; fi;
           if [ $TUAN_ACTIVEID ]; then sed -i "/variables/a\      TUAN_ACTIVEID: $TUAN_ACTIVEID" serverless.yml; fi;
+          if [ $HELP_AUTHOR ]; then sed -i "/variables/a\      HELP_AUTHOR: $HELP_AUTHOR" serverless.yml; fi;
           cat serverless.yml
           env
 
