@@ -8,17 +8,17 @@
 ============Quantumultx===============
 [task_local]
 #金榜年终奖
-10 0 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_split.js, tag=年终奖, enabled=true
+10 0 * * * jd_split.js, tag=年终奖, enabled=true
 
 ================Loon==============
 [Script]
-cron "10 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_split.js,tag=年终奖
+cron "10 0 * * *" script-path=jd_split.js,tag=年终奖
 
 ===============Surge=================
-金榜年终奖 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_split.js
+金榜年终奖 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=jd_split.js
 
 ============小火箭=========
-金榜年终奖 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_split.js, cronexpr="10 0 * * *", timeout=3600, enable=true
+金榜年终奖 = type=cron,script-path=jd_split.js, cronexpr="10 0 * * *", timeout=3600, enable=true
  */
 const $ = new Env('金榜年终奖');
 

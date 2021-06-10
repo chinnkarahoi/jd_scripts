@@ -1,5 +1,5 @@
 /*
-京东资产变动通知脚本：https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_change.js
+京东资产变动通知脚本：jd_bean_change.js
 Modified time: 2021-06-9 15:25:41
 统计昨日京豆的变化情况，包括收入，支出，以及显示当前京豆数量,目前小问题:下单使用京豆后,退款重新购买,计算统计会出现异常
 统计红包以及过期红包
@@ -9,16 +9,16 @@ Modified time: 2021-06-9 15:25:41
 ============QuantumultX==============
 [task_local]
 #京东资产变动通知
-2 9 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_change.js, tag=京东资产变动通知, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+2 9 * * * jd_bean_change.js, tag=京东资产变动通知, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 ================Loon===============
 [Script]
-cron "2 9 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_change.js, tag=京东资产变动通知
+cron "2 9 * * *" script-path=jd_bean_change.js, tag=京东资产变动通知
 =============Surge===========
 [Script]
-京东资产变动通知 = type=cron,cronexp="2 9 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_change.js
+京东资产变动通知 = type=cron,cronexp="2 9 * * *",wake-system=1,timeout=3600,script-path=jd_bean_change.js
 
 ============小火箭=========
-京东资产变动通知 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_change.js, cronexpr="2 9 * * *", timeout=3600, enable=true
+京东资产变动通知 = type=cron,script-path=jd_bean_change.js, cronexpr="2 9 * * *", timeout=3600, enable=true
  */
 const $ = new Env('京东资产变动通知');
 const notify = $.isNode() ? require('./sendNotify') : '';

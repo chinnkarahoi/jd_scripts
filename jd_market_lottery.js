@@ -6,17 +6,17 @@
 ==============Quantumult X==============
 [task_local]
 #幸运大转盘
-4 10 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_market_lottery.js, tag=幸运大转盘, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+4 10 * * * jd_market_lottery.js, tag=幸运大转盘, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ==============Loon==============
 [Script]
-cron "4 10 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_market_lottery.js,tag=幸运大转盘
+cron "4 10 * * *" script-path=jd_market_lottery.js,tag=幸运大转盘
 
 ================Surge===============
-幸运大转盘 = type=cron,cronexp="4 10 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_market_lottery.js
+幸运大转盘 = type=cron,cronexp="4 10 * * *",wake-system=1,timeout=3600,script-path=jd_market_lottery.js
 
 ===============小火箭==========
-幸运大转盘 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_market_lottery.js, cronexpr="4 10 * * *", timeout=3600, enable=true
+幸运大转盘 = type=cron,script-path=jd_market_lottery.js, cronexpr="4 10 * * *", timeout=3600, enable=true
 */
 
 const $ = new Env("幸运大转盘");

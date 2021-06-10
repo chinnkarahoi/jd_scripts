@@ -1,24 +1,24 @@
 /*
 京东超级盒子
 活动时间：未知
-更新地址：https://gitee.com/lxk0301/jd_scripts/raw/master/jd_super_box.js
+更新地址：jd_super_box.js
 活动入口：https://prodev.m.jd.com/mall/active/21uMxFV5yiP4ivdSbmHqv5f2aXFK/index.html?tttparams=TiOY=woeyJnTG5nIjoiMTIwLjg3NTY0MSIsImdMYXQiOiIzMS4yODMxMzYifQ7==
 已支持IOS双京东账号, Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, 小火箭，JSBox, Node.js
 ============Quantumultx===============
 [task_local]
 #京东超级盒子
-20 7 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_super_box.js, tag=京东超级盒子, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+20 7 * * * jd_super_box.js, tag=京东超级盒子, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "20 7 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_super_box.js,tag=京东超级盒子
+cron "20 7 * * *" script-path=jd_super_box.js,tag=京东超级盒子
 
 ===============Surge=================
-京东超级盒子 = type=cron,cronexp="20 7 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_super_box.js
+京东超级盒子 = type=cron,cronexp="20 7 * * *",wake-system=1,timeout=3600,script-path=jd_super_box.js
 
 ============小火箭=========
-京东超级盒子 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_super_box.js, cronexpr="20 7 * * *", timeout=3600, enable=true
+京东超级盒子 = type=cron,script-path=jd_super_box.js, cronexpr="20 7 * * *", timeout=3600, enable=true
 */
 const $ = new Env('京东超级盒子');
 

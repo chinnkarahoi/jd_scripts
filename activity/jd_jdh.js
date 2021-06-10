@@ -6,17 +6,17 @@
 ============Quantumultx===============
 [task_local]
 #京东健康
-10 8 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdh.js, tag=京东健康, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_jdh.png, enabled=true
+10 8 * * * jd_jdh.js, tag=京东健康, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_jdh.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "10 8 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdh.js,tag=京东健康
+cron "10 8 * * *" script-path=jd_jdh.js,tag=京东健康
 
 ===============Surge=================
-京东健康 = type=cron,cronexp="10 8 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdh.js
+京东健康 = type=cron,cronexp="10 8 * * *",wake-system=1,timeout=3600,script-path=jd_jdh.js
 
 ============小火箭=========
-京东健康 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdh.js, cronexpr="10 8 * * *", timeout=3600, enable=true
+京东健康 = type=cron,script-path=jd_jdh.js, cronexpr="10 8 * * *", timeout=3600, enable=true
  */
 const $ = new Env('京东健康');
 const notify = $.isNode() ? require('../sendNotify') : '';

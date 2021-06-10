@@ -7,17 +7,17 @@
 =================================Quantumultx=========================
 [task_local]
 #5G超级盲盒
-0 0,1-23/3 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mohe.js, tag=5G超级盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 0,1-23/3 * * * jd_mohe.js, tag=5G超级盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 =================================Loon===================================
 [Script]
-cron "0 0,1-23/3 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mohe.js,tag=5G超级盲盒
+cron "0 0,1-23/3 * * *" script-path=jd_mohe.js,tag=5G超级盲盒
 
 ===================================Surge================================
-5G超级盲盒 = type=cron,cronexp="0 0,1-23/3 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mohe.js
+5G超级盲盒 = type=cron,cronexp="0 0,1-23/3 * * *",wake-system=1,timeout=3600,script-path=jd_mohe.js
 
 ====================================小火箭=============================
-5G超级盲盒 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mohe.js, cronexpr="0 0,1-23/3 * * *", timeout=3600, enable=true
+5G超级盲盒 = type=cron,script-path=jd_mohe.js, cronexpr="0 0,1-23/3 * * *", timeout=3600, enable=true
  */
 const $ = new Env('5G超级盲盒');
 const notify = $.isNode() ? require('./sendNotify') : '';

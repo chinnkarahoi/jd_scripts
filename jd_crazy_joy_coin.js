@@ -12,17 +12,17 @@ crazy joy
 ============Quantumultx===============
 [task_local]
 #crazyJoy挂机
-10 1,12 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy_coin.js, tag=crazyJoy挂机, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_crazy_joy.png, enabled=true
+10 1,12 * * * jd_crazy_joy_coin.js, tag=crazyJoy挂机, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_crazy_joy.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "10 1,12 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy_coin.js,tag=crazyJoy挂机
+cron "10 1,12 * * *" script-path=jd_crazy_joy_coin.js,tag=crazyJoy挂机
 
 ===============Surge=================
-crazyJoy挂机 = type=cron,cronexp="10 1,12 * * *",wake-system=1,timeout=20,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy_coin.js
+crazyJoy挂机 = type=cron,cronexp="10 1,12 * * *",wake-system=1,timeout=20,script-path=jd_crazy_joy_coin.js
 
 ============小火箭=========
-crazyJoy挂机 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy_coin.js, cronexpr="10 1,12 * * *", timeout=200, enable=true
+crazyJoy挂机 = type=cron,script-path=jd_crazy_joy_coin.js, cronexpr="10 1,12 * * *", timeout=200, enable=true
 
  */
 

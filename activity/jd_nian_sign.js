@@ -9,17 +9,17 @@
 ============Quantumultx===============
 [task_local]
 #京东炸年兽签到任务🧨
-30 8 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian_sign.js, tag=京东炸年兽签到任务🧨, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/lxk0301/jd_nian.png, enabled=true
+30 8 * * * jd_nian_sign.js, tag=京东炸年兽签到任务🧨, enabled=true
 
 ================Loon==============
 [Script]
-cron "30 8 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian_sign.js,tag=京东炸年兽签到任务🧨
+cron "30 8 * * *" script-path=jd_nian_sign.js,tag=京东炸年兽签到任务🧨
 
 ===============Surge=================
-京东炸年兽签到任务🧨 = type=cron,cronexp="30 8 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian_sign.js
+京东炸年兽签到任务🧨 = type=cron,cronexp="30 8 * * *",wake-system=1,timeout=3600,script-path=jd_nian_sign.js
 
 ============小火箭=========
-京东炸年兽签到任务🧨 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian_sign.js, cronexpr="30 8 * * *", timeout=3600, enable=true
+京东炸年兽签到任务🧨 = type=cron,script-path=jd_nian_sign.js, cronexpr="30 8 * * *", timeout=3600, enable=true
  */
 const $ = new Env('京东炸年兽签到任务🧨');
 

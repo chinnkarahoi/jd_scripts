@@ -2,24 +2,24 @@
 京东代属脚本，类似十元街，⚠️⚠️⚠️⚠️限校园用户可使用,其他用户签到失败无京豆
 一周签到下来可获得30京豆，一天任意时刻运行一次即可
 
-更新地址：https://gitee.com/lxk0301/jd_scripts/raw/master/jd_ds.js
+更新地址：jd_ds.js
 参考github@jidesheng6修改而来
 已支持IOS双京东账号, Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, 小火箭，JSBox, Node.js
 ============Quantumultx===============
 [task_local]
 #京东代属
-10 7 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_ds.js, tag=京东代属, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_ds.png, enabled=true
+10 7 * * * jd_ds.js, tag=京东代属, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_ds.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "10 7 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_ds.js, tag=京东代属
+cron "10 7 * * *" script-path=jd_ds.js, tag=京东代属
 
 ===============Surge=================
-京东代属 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_ds.js
+京东代属 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=3600,script-path=jd_ds.js
 
 ============小火箭=========
-京东代属 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_ds.js, cronexpr="10 7 * * *", timeout=3600, enable=true
+京东代属 = type=cron,script-path=jd_ds.js, cronexpr="10 7 * * *", timeout=3600, enable=true
  */
 const $ = new Env('京东代属');
 
@@ -79,8 +79,8 @@ function showMsg() {
     // $.msg($.name, '', `【京东账号${$.index}】${$.nickName}\n${message}`);
     let nowTime = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*60*60*1000;
     if (nowTime > new Date('2020/12/31 23:59:59+08:00').getTime()) {
-      $.msg($.name, '活动已结束', `咱江湖再见\nhttps://github.com/LXK9301/jd_scripts`, {"open-url": "https://github.com/LXK9301/jd_scripts"});
-      if ($.isNode()) await notify.sendNotify($.name + '活动已结束', `咱江湖再见\n https://github.com/LXK9301/jd_scripts`)
+      $.msg($.name, '活动已结束', `咱江湖再见`);
+      if ($.isNode()) await notify.sendNotify($.name + '活动已结束', `咱江湖再见`)
     } else {
       $.msg($.name, '', `京东账号${$.index} ${$.nickName}\n${message}`);
     }

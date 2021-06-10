@@ -8,17 +8,17 @@ PUBG ,运行时间会比较久,Surge请加大timeout时间
 ============Quantumultx===============
 [task_local]
 #PUBG
-10 0 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pubg.js, tag=PUBG, enabled=true
+10 0 * * * jd_pubg.js, tag=PUBG, enabled=true
 
 ================Loon==============
 [Script]
-cron "10 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pubg.js,tag=PUBG
+cron "10 0 * * *" script-path=jd_pubg.js,tag=PUBG
 
 ===============Surge=================
-PUBG = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pubg.js
+PUBG = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=jd_pubg.js
 
 ============小火箭=========
-PUBG = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pubg.js, cronexpr="10 0 * * *", timeout=3600, enable=true
+PUBG = type=cron,script-path=jd_pubg.js, cronexpr="10 0 * * *", timeout=3600, enable=true
  */
 const $ = new Env('PUBG');
 !function(n) {

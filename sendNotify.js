@@ -148,7 +148,7 @@ if (process.env.PUSH_PLUS_USER) {
  * @param author 作者仓库等信息  例：`本脚本免费使用 By：xxxx`
  * @returns {Promise<unknown>}
  */
-async function sendNotify(text, desp, params = {}, author = '\n\n仅供用于学习 https://t.me/jdfruit') {
+async function sendNotify(text, desp, params = {}, author = '\n\n仅供用于学习') {
   //提供6种通知
   desp += author;//增加作者信息，防止被贩卖等
   await Promise.all([
@@ -531,7 +531,7 @@ function qywxamNotify(text, desp) {
               textcard: {
                 title: `${text}`,
                 description: `${desp}`,
-                url: 'https://github.com/lxk0301/jd_scripts',
+                url: '',
                 btntxt: '更多'
               }
             }
