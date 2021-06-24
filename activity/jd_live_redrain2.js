@@ -2,23 +2,23 @@
 超级直播间红包雨
 每天20-23半点可领，每日上限未知
 活动时间：活动时间未知
-更新地址：https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live_redrain2.js
+更新地址：jd_live_redrain2.js
 已支持IOS双京东账号, Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, 小火箭，JSBox, Node.js
 ============Quantumultx===============
 [task_local]
 #超级直播间红包雨
-30 20-23/1 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live_redrain2.js, tag=超级直播间红包雨, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true
+30 20-23/1 * * * jd_live_redrain2.js, tag=超级直播间红包雨, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "30 20-23/1 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live_redrain2.js, tag=超级直播间红包雨
+cron "30 20-23/1 * * *" script-path=jd_live_redrain2.js, tag=超级直播间红包雨
 
 ===============Surge=================
-超级直播间红包雨 = type=cron,cronexp="30 20-23/1 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live_redrain2.js
+超级直播间红包雨 = type=cron,cronexp="30 20-23/1 * * *",wake-system=1,timeout=3600,script-path=jd_live_redrain2.js
 
 ============小火箭=========
-超级直播间红包雨 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live_redrain2.js, cronexpr="30 20-23/1 * * *", timeout=3600, enable=true
+超级直播间红包雨 = type=cron,script-path=jd_live_redrain2.js, cronexpr="30 20-23/1 * * *", timeout=3600, enable=true
  */
 const $ = new Env('超级直播间红包雨');
 

@@ -8,17 +8,17 @@
 ============Quantumultx===============
 [task_local]
 #苹果抽奖机
-10 0 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_apple_live.js, tag=苹果抽奖机, enabled=true
+10 0 * * * jd_apple_live.js, tag=苹果抽奖机, enabled=true
 
 ================Loon==============
 [Script]
-cron "10 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_apple_live.js,tag=苹果抽奖机
+cron "10 0 * * *" script-path=jd_apple_live.js,tag=苹果抽奖机
 
 ===============Surge=================
-苹果抽奖机 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_apple_live.js
+苹果抽奖机 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=jd_apple_live.js
 
 ============小火箭=========
-苹果抽奖机 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_apple_live.js, cronexpr="10 0 * * *", timeout=3600, enable=true
+苹果抽奖机 = type=cron,script-path=jd_apple_live.js, cronexpr="10 0 * * *", timeout=3600, enable=true
  */
 const $ = new Env('苹果抽奖机');
 

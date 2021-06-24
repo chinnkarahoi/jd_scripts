@@ -5,24 +5,24 @@
 号内循环互助，每天2500+兑币=20+京豆，推荐打开将抽奖码换为兑币的开关
 docker用户推荐修改默认cron，避免冲垮服务器
 活动入口：微信搜索小程序-京小兑
-更新地址：https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxd.js
+更新地址：jd_jxd.js
 
 已支持IOS双京东账号, Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, 小火箭，JSBox, Node.js
 ============Quantumultx===============
 [task_local]
 #京小兑
-30 8,16,20 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxd.js, tag=京小兑, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_jxd.png, enabled=true
+30 8,16,20 * * * jd_jxd.js, tag=京小兑, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_jxd.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "35 8,16,20 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxd.js, tag=京小兑
+cron "35 8,16,20 * * *" script-path=jd_jxd.js, tag=京小兑
 
 ===============Surge=================
-京小兑 = type=cron,cronexp="40 8,16,20 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxd.js
+京小兑 = type=cron,cronexp="40 8,16,20 * * *",wake-system=1,timeout=3600,script-path=jd_jxd.js
 
 ============小火箭=========
-京小兑 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxd.js, cronexpr="45 8,16,20 * * *", timeout=3600, enable=true
+京小兑 = type=cron,script-path=jd_jxd.js, cronexpr="45 8,16,20 * * *", timeout=3600, enable=true
  */
 
 const $ = new Env('京小兑');

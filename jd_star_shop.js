@@ -10,17 +10,17 @@
 =================================Quantumultx=========================
 [task_local]
 #明星小店
-0 1,21 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_star_shop.js, tag=明星小店, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 1,21 * * * jd_star_shop.js, tag=明星小店, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 =================================Loon===================================
 [Script]
-cron "0 1,21 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_star_shop.js,tag=明星小店
+cron "0 1,21 * * *" script-path=jd_star_shop.js,tag=明星小店
 
 ===================================Surge================================
-明星小店 = type=cron,cronexp="0 1,21 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_star_shop.js
+明星小店 = type=cron,cronexp="0 1,21 * * *",wake-system=1,timeout=3600,script-path=jd_star_shop.js
 
 ====================================小火箭=============================
-明星小店 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_star_shop.js, cronexpr="0 1,21 * * *", timeout=3600, enable=true
+明星小店 = type=cron,script-path=jd_star_shop.js, cronexpr="0 1,21 * * *", timeout=3600, enable=true
  */
 
 const $ = new Env('明星小店');

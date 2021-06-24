@@ -8,16 +8,16 @@
 ============QuantumultX==============
 [task_local]
 #球队赢好礼
-10 1 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_tcl.js, tag=球队赢好礼, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdyjd.png, enabled=true
+10 1 * * * jd_tcl.js, tag=球队赢好礼, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdyjd.png, enabled=true
 =================Loon===============
 [Script]
-cron "10 1 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_tcl.js,tag=球队赢好礼
+cron "10 1 * * *" script-path=jd_tcl.js,tag=球队赢好礼
 =================Surge==============
 [Script]
-球队赢好礼 = type=cron,cronexp="10 1 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_tcl.js
+球队赢好礼 = type=cron,cronexp="10 1 * * *",wake-system=1,timeout=3600,script-path=jd_tcl.js
 
 ============小火箭=========
-球队赢好礼 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_tcl.js, cronexpr="10 1 * * *", timeout=3600, enable=true
+球队赢好礼 = type=cron,script-path=jd_tcl.js, cronexpr="10 1 * * *", timeout=3600, enable=true
 */
 
 const $ = new Env("球队赢好礼");

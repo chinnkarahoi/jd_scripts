@@ -9,17 +9,17 @@
 ============Quantumultx===============
 [task_local]
 #京喜故事
-10 7 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxstory.js, tag=京喜故事, enabled=true
+10 7 * * * jd_jxstory.js, tag=京喜故事, enabled=true
 
 ================Loon==============
 [Script]
-cron "10 7 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxstory.js,tag=京喜故事
+cron "10 7 * * *" script-path=jd_jxstory.js,tag=京喜故事
 
 ===============Surge=================
-京喜故事 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxstory.js
+京喜故事 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=3600,script-path=jd_jxstory.js
 
 ============小火箭=========
-京喜故事 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxstory.js, cronexpr="10 * * * *", timeout=3600, enable=true
+京喜故事 = type=cron,script-path=jd_jxstory.js, cronexpr="10 * * * *", timeout=3600, enable=true
 
  */
 

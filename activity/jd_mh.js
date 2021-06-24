@@ -1,24 +1,24 @@
 /*
 盲盒抽京豆
 活动时间：2021年1月6日～2021年2月5日
-更新地址：https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mh.js
+更新地址：jd_mh.js
 活动入口：https://anmp.jd.com/babelDiy/Zeus/xKACpgVjVJM7zPKbd5AGCij5yV9/index.html?wxAppName=jd
 已支持IOS双京东账号,Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 ============Quantumultx===============
 [task_local]
 #盲盒抽京豆
-1 7 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mh.js, tag=盲盒抽京豆, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_mh.jpg, enabled=true
+1 7 * * * jd_mh.js, tag=盲盒抽京豆, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_mh.jpg, enabled=true
 
 ================Loon==============
 [Script]
-cron "1 7 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mh.js,tag=盲盒抽京豆
+cron "1 7 * * *" script-path=jd_mh.js,tag=盲盒抽京豆
 
 ===============Surge=================
-盲盒抽京豆 = type=cron,cronexp="1 7 * * *",wake-system=1,timeout=200,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mh.js
+盲盒抽京豆 = type=cron,cronexp="1 7 * * *",wake-system=1,timeout=200,script-path=jd_mh.js
 
 ============小火箭=========
-盲盒抽京豆 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_mh.js, cronexpr="1 8,12,18* * *", timeout=200, enable=true
+盲盒抽京豆 = type=cron,script-path=jd_mh.js, cronexpr="1 8,12,18* * *", timeout=200, enable=true
  */
 const $ = new Env('盲盒抽京豆');
 const notify = $.isNode() ? require('../sendNotify') : '';

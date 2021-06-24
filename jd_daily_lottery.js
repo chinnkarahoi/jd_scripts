@@ -7,17 +7,17 @@ author：star
 ===================quantumultx================
 [task_local]
 #每日抽奖
-13 1,22,23 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_daily_lottery.js, tag=每日抽奖, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+13 1,22,23 * * * jd_daily_lottery.js, tag=每日抽奖, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 =====================Loon================
 [Script]
-cron "13 1,22,23 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_daily_lottery.js, tag=每日抽奖
+cron "13 1,22,23 * * *" script-path=jd_daily_lottery.js, tag=每日抽奖
 
 ====================Surge================
-每日抽奖 = type=cron,cronexp="13 1,22,23 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_daily_lottery.js
+每日抽奖 = type=cron,cronexp="13 1,22,23 * * *",wake-system=1,timeout=3600,script-path=jd_daily_lottery.js
 
 ============小火箭=========
-每日抽奖 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_daily_lottery.js, cronexpr="13 1,22,23 * * *", timeout=3600, enable=true
+每日抽奖 = type=cron,script-path=jd_daily_lottery.js, cronexpr="13 1,22,23 * * *", timeout=3600, enable=true
 */
 const $ = new Env('小鸽有礼-每日抽奖');
 const notify = $.isNode() ? require('./sendNotify') : '';

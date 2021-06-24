@@ -7,18 +7,18 @@
 ==============Quantumult X==============
 [task_local]
 #京东宠汪汪喂食
-15 0-23/1 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js, tag=京东宠汪汪喂食, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png, enabled=true
+15 0-23/1 * * * jd_joy_feedPets.js, tag=京东宠汪汪喂食, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png, enabled=true
 
 ==============Loon===============
 [Script]
-cron "15 0-23/1 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js,tag=京东宠汪汪喂食
+cron "15 0-23/1 * * *" script-path=jd_joy_feedPets.js,tag=京东宠汪汪喂食
 
 =========Surge=============
 [Script]
-京东宠汪汪喂食 = type=cron,cronexp="15 0-23/1 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js
+京东宠汪汪喂食 = type=cron,cronexp="15 0-23/1 * * *",wake-system=1,timeout=3600,script-path=jd_joy_feedPets.js
 
 ===============小火箭==========
-京东宠汪汪喂食 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js, cronexpr="15 0-23/1 * * *", timeout=3600, enable=true
+京东宠汪汪喂食 = type=cron,script-path=jd_joy_feedPets.js, cronexpr="15 0-23/1 * * *", timeout=3600, enable=true
 */
 
 !function (t, r) { "object" == typeof exports ? module.exports = exports = r() : "function" == typeof define && define.amd ? define([], r) : t.CryptoJS = r() }(this, function () {

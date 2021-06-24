@@ -1,7 +1,4 @@
 /*
-* author:star
-* */
-/*
 惊喜牧场
 更新时间：2021-6-8
 活动入口：京喜APP-我的-京喜牧场
@@ -10,17 +7,17 @@
 ============Quantumultx===============
 [task_local]
 #惊喜牧场
-20 0-23/3 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxmc.js, tag=惊喜牧场, img-url=https://github.com/58xinian/icon/raw/master/jdgc.png, enabled=true
+20 0-23/3 * * * jd_jxmc.js, tag=惊喜牧场, img-url=https://github.com/58xinian/icon/raw/master/jdgc.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "20 0-23/3 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxmc.js,tag=惊喜牧场
+cron "20 0-23/3 * * *" script-path=jd_jxmc.js,tag=惊喜牧场
 
 ===============Surge=================
-惊喜牧场 = type=cron,cronexp="20 0-23/3 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxmc.js
+惊喜牧场 = type=cron,cronexp="20 0-23/3 * * *",wake-system=1,timeout=3600,script-path=jd_jxmc.js
 
 ============小火箭=========
-惊喜牧场 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jxmc.js, cronexpr="20 0-23/3 * * *", timeout=3600, enable=true
+惊喜牧场 = type=cron,script-path=jd_jxmc.js, cronexpr="20 0-23/3 * * *", timeout=3600, enable=true
  */
 // prettier-ignore
 !function (t, r) { "object" == typeof exports ? module.exports = exports = r() : "function" == typeof define && define.amd ? define([], r) : t.CryptoJS = r() }(this, function () {

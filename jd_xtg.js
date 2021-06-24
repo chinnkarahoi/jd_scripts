@@ -9,17 +9,17 @@ Last Modified time: 2021-05-31 9:15:04
 ============Quantumultx===============
 [task_local]
 #家电星推官
-0 0 0 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xtg.js, tag=家电星推官, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 0 0 * * * jd_xtg.js, tag=家电星推官, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "0 0 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xtg.js,tag=家电星推官
+cron "0 0 0 * * *" script-path=jd_xtg.js,tag=家电星推官
 
 ===============Surge=================
-家电星推官 = type=cron,cronexp="0 0 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xtg.js
+家电星推官 = type=cron,cronexp="0 0 0 * * *",wake-system=1,timeout=3600,script-path=jd_xtg.js
 
 ============小火箭=========
-家电星推官 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xtg.js, cronexpr="0 0 0 * * *", timeout=3600, enable=true
+家电星推官 = type=cron,script-path=jd_xtg.js, cronexpr="0 0 0 * * *", timeout=3600, enable=true
  */
 const $ = new Env("家电星推官");
 const activeEndTime = "2021/06/18 23:59:59+08:00"; //活动结束时间

@@ -8,17 +8,17 @@
 ============Quantumultx===============
 [task_local]
 #京东炸年兽AR
-0 9 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian_ar.js, tag=京东炸年兽AR, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/lxk0301/jd_nian.png, enabled=true
+0 9 * * * jd_nian_ar.js, tag=京东炸年兽AR, enabled=true
 
 ================Loon==============
 [Script]
-cron "0 9 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian_ar.js,tag=京东炸年兽AR
+cron "0 9 * * *" script-path=jd_nian_ar.js,tag=京东炸年兽AR
 
 ===============Surge=================
-京东炸年兽AR = type=cron,cronexp="0 9 * * *",wake-system=1,timeout=36000,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian_ar.js
+京东炸年兽AR = type=cron,cronexp="0 9 * * *",wake-system=1,timeout=36000,script-path=jd_nian_ar.js
 
 ============小火箭=========
-京东炸年兽AR = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian_ar.js, cronexpr="0 9 * * *", timeout=3600, enable=true
+京东炸年兽AR = type=cron,script-path=jd_nian_ar.js, cronexpr="0 9 * * *", timeout=3600, enable=true
  */
 const $ = new Env('京东炸年兽AR');
 

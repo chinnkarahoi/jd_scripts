@@ -6,17 +6,17 @@
 ============Quantumultx===============
 [task_local]
 #沸腾之夜
-0 15-19/1 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_party_night.js, tag=沸腾之夜, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 15-19/1 * * * jd_party_night.js, tag=沸腾之夜, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "0 15-19/1 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_party_night.js,tag=沸腾之夜
+cron "0 15-19/1 * * *" script-path=jd_party_night.js,tag=沸腾之夜
 
 ===============Surge=================
-沸腾之夜 = type=cron,cronexp="0 15-19/1 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_party_night.js
+沸腾之夜 = type=cron,cronexp="0 15-19/1 * * *",wake-system=1,timeout=3600,script-path=jd_party_night.js
 
 ============小火箭=========
-沸腾之夜 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_party_night.js, cronexpr="0 15-19/1 * * *", timeout=3600, enable=true
+沸腾之夜 = type=cron,script-path=jd_party_night.js, cronexpr="0 15-19/1 * * *", timeout=3600, enable=true
  */
 const $ = new Env('沸腾之夜');
 const notify = $.isNode() ? require('../sendNotify') : '';

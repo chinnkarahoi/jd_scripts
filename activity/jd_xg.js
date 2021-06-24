@@ -2,24 +2,24 @@
 小鸽有礼
 抽奖可获得京豆和快递优惠券
 活动时间：2021年1月15日至2021年2月19日
-更新地址：https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xg.js
+更新地址：jd_xg.js
 活动入口：https://snsdesign.jd.com/babelDiy/Zeus/4N5phvUAqZsGWBNGVJWmufXoBzpt/index.html?channel=lingsns003&scope=0&sceneid=9001&btnTips=&hideApp=0
 已支持IOS双京东账号,Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 ============Quantumultx===============
 [task_local]
 #小鸽有礼
-5 7 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xg.js, tag=小鸽有礼, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_xg.jpg, enabled=true
+5 7 * * * jd_xg.js, tag=小鸽有礼, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_xg.jpg, enabled=true
 
 ================Loon==============
 [Script]
-cron "5 7 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xg.js,tag=小鸽有礼
+cron "5 7 * * *" script-path=jd_xg.js,tag=小鸽有礼
 
 ===============Surge=================
-小鸽有礼 = type=cron,cronexp="5 7 * * *",wake-system=1,timeout=200,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xg.js
+小鸽有礼 = type=cron,cronexp="5 7 * * *",wake-system=1,timeout=200,script-path=jd_xg.js
 
 ============小火箭=========
-小鸽有礼 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xg.js, cronexpr="5 7 * * *", timeout=200, enable=true
+小鸽有礼 = type=cron,script-path=jd_xg.js, cronexpr="5 7 * * *", timeout=200, enable=true
  */
 const $ = new Env('小鸽有礼');
 const notify = $.isNode() ? require('../sendNotify') : '';

@@ -6,14 +6,14 @@
 ==========Quantumult X==========
 [task_local]
 #注销京东会员卡
-55 23 * * 6 https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unbind.js, tag=注销京东会员卡, img-url= https://raw.githubusercontent.com/58xinian/icon/master/jd_unbind.png, enabled=true
+55 23 * * 6 jd_unbind.js, tag=注销京东会员卡, img-url= https://raw.githubusercontent.com/58xinian/icon/master/jd_unbind.png, enabled=true
 =======Loon========
 [Script]
-cron "55 23 * * 6" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unbind.js,tag=注销京东会员卡
+cron "55 23 * * 6" script-path=jd_unbind.js,tag=注销京东会员卡
 ========Surge==========
-注销京东会员卡 = type=cron,cronexp="55 23 * * 6",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unbind.js
+注销京东会员卡 = type=cron,cronexp="55 23 * * 6",wake-system=1,timeout=3600,script-path=jd_unbind.js
 =======小火箭=====
-注销京东会员卡 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unbind.js, cronexpr="10 23 * * 6", timeout=3600, enable=true
+注销京东会员卡 = type=cron,script-path=jd_unbind.js, cronexpr="10 23 * * 6", timeout=3600, enable=true
  */
 const $ = new Env('注销京东会员卡');
 //Node.js用户请在jdCookie.js处填写京东ck;
